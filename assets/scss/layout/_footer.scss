@@ -1,0 +1,34 @@
+.footer {
+    padding: 60px 0;
+    @media (max-width: 1199px) {
+        padding: 60px 20px;
+    }
+    .support-email {
+        font-family: muli-bold;
+        color: #5E6282;
+    }
+
+    .link-heading {
+        font-family: muli-extrabold;
+        color: #080809;
+        margin-bottom: 30px;
+    }
+
+    .footer-link {
+        color: #5E6282;
+        margin-bottom: 12px;
+        display: block;
+    }
+
+    .mobile-app-download-heading {
+        color: #5E6282;
+        font-family: muli-bold;
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        color: #5E6282;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+}
