@@ -18,30 +18,35 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
-        <a class="navbar-brand d-lg-none d-flex" href="#">
+        <a class="navbar-brand d-lg-none d-flex mr-0" href="#">
           <img src="assets/images/logo.png" alt="logo" class="img-fluid" style="max-width: 150px;">
         </a>
 
-        <div class="ms-auto d-lg-none d-flex me-3">
-          <div class="nav-item dropdown me-3">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" style="font-size: 12px;">
+        <div class="ms-auto d-lg-none d-flex mr-1">
+          <div class="dropdown nav-item">
+            <a class="nav-link dropdown-toggle px-2" href="#" role="button" data-toggle="dropdown" aria-expanded="false"
+              style="font-size: 12px; color: black;">
               USD
             </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">USD</a></li>
-              <li><a class="dropdown-item" href="#">GBP</a></li>
-              <li><a class="dropdown-item" href="#">SAR</a></li>
-              <li><a class="dropdown-item" href="#">UER</a></li>
-            </ul>
+
+            <div class=" dropdown-menu">
+              <a class="dropdown-item" href="#">USD</a>
+              <a class="dropdown-item" href="#">GBP</a>
+              <a class="dropdown-item" href="#">SAR</a>
+              <a class="dropdown-item" href="#">UER</a>
+            </div>
           </div>
-          <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" style="font-size: 12px;">
-              <span class="image"><img src="https://earthtravel.online/uploads/images/language/en.png" alt="image"
-                  class="img-fluid me-1" style="width: 20px; margin-top: -2px;"></span> English
+
+          <div class="dropdown nav-item">
+            <a class="nav-link dropdown-toggle px-2" href="#" role="button" data-toggle="dropdown" aria-expanded="false"
+              style="font-size: 12px; color: black;">
+              <span class="image">
+                <img src="https://earthtravel.online/uploads/images/language/en.png" alt="image" class="img-fluid me-1"
+                  style="width: 20px; margin-top: -2px;"></span>
+              ENGLISH
             </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+
+            <ul class="dropdown-menu">
               <li>
                 <a id="en" class="dropdown-item" href="#"><span class="image"><img
                       src="https://earthtravel.online/uploads/images/language/en.png" alt="image" class="img-fluid me-1"
@@ -109,25 +114,29 @@
             <img src="assets/images/logo-lg.png" alt="logo" class="img-fluid" style="height: 48px;">
           </a>
           <div class="navbar-nav ms-auto d-lg-flex d-none">
-            <div class="nav-item dropdown pr-3">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+
+            <div class="dropdown nav-item mr-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                 USD
               </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">USD</a></li>
-                <li><a class="dropdown-item" href="#">GBP</a></li>
-                <li><a class="dropdown-item" href="#">SAR</a></li>
-                <li><a class="dropdown-item" href="#">UER</a></li>
-              </ul>
+
+              <div class=" dropdown-menu">
+                <a class="dropdown-item" href="#">USD</a>
+                <a class="dropdown-item" href="#">GBP</a>
+                <a class="dropdown-item" href="#">SAR</a>
+                <a class="dropdown-item" href="#">UER</a>
+              </div>
             </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span class="image"><img src="https://earthtravel.online/uploads/images/language/en.png" alt="image"
-                    class="img-fluid me-1" style="width: 20px; margin-top: -2px;"></span> ENGLISH
+
+            <div class="dropdown nav-item mr-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                <span class="image">
+                  <img src="https://earthtravel.online/uploads/images/language/en.png" alt="image"
+                    class="img-fluid me-1" style="width: 20px; margin-top: -2px;"></span>
+                ENGLISH
               </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+
+              <ul class="dropdown-menu">
                 <li>
                   <a id="en" class="dropdown-item" href="#"><span class="image"><img
                         src="https://earthtravel.online/uploads/images/language/en.png" alt="image"
@@ -190,8 +199,9 @@
       <div class="filter-wrapper">
         <div class="container">
           <div class="blur p-3 rounded-4">
-            <div class="filter-content p-lg-4 p-3 rounded-3 shadow-sm">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="filter-content p-lg-4 p-3 shadow-sm">
+              <ul class="nav nav-pills mb-lg-4 justify-content-xl-start justify-content-center" id="pills-tab"
+                role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
                     type="button" role="tab" aria-controls="pills-home" aria-selected="true"> <i
@@ -211,33 +221,34 @@
 
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <div class="row gy-2 gx-0">
-                    <div class="col-xl-4">
+                  <div class="row g-0">
+                    <div class="col-xl-4 cc-col">
                       <label class="form-label text-black d-xl-block d-none">WHERE ARE YOU TRAVELING</label>
                       <div class="position-relative">
-                        <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4" placeholder="Destination">
+                        <input type="text" class="mb-2 mb-xl-0 form-control w-100 py-md-3 py-2 rounded-0 pl-4"
+                          placeholder="Destination">
                         <i class="fas fa-map-marker-alt position-absolute centered-icon pl-2"></i>
                       </div>
                     </div>
-                    <div class="col-xl-8">
-                      <div class="row align-items-end gy-2 gx-0">
-                        <div class="col-xl-5">
+                    <div class="col-xl-8 pl-xl-0 cc-col c-pad">
+                      <div class="row align-items-end">
+                        <div class="col-xl-5 p-xl-0 cc-col">
                           <label class="form-label text-black d-xl-block d-none">TRAVEL DATES</label>
                           <div class="position-relative">
-                            <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4"
+                            <input type="text" class="mb-2 mb-xl-0 form-control py-md-3 py-2 rounded-0 pl-4"
                               placeholder="Destination">
                             <i class="fas fa-calendar-alt position-absolute centered-icon pl-2"></i>
                           </div>
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 p-xl-0 cc-col">
                           <label class="form-label text-black d-xl-block d-none">TRAVELERS</label>
                           <div class="position-relative">
-                            <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4"
+                            <input type="text" class="mb-2 mb-xl-0 form-control py-md-3 py-2 rounded-0 pl-4"
                               placeholder="Destination">
                             <i class="fas fa-male position-absolute centered-icon pl-2"></i>
                           </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 pl-xl-0 cc-col">
                           <button class="btn filter-submit-btn rounded-0 py-md-3 w-100 py-2">TRAVEL DATES</button>
                         </div>
                       </div>
@@ -245,33 +256,34 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  <div class="row gy-2 gx-0">
-                    <div class="col-xl-4">
+                  <div class="row g-0">
+                    <div class="col-xl-4 cc-col">
                       <label class="form-label text-black d-xl-block d-none">WHERE ARE YOU TRAVELING</label>
                       <div class="position-relative">
-                        <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4" placeholder="Destination">
+                        <input type="text" class="mb-2 mb-xl-0 form-control w-100 py-md-3 py-2 rounded-0 pl-4"
+                          placeholder="Destination">
                         <i class="fas fa-map-marker-alt position-absolute centered-icon pl-2"></i>
                       </div>
                     </div>
-                    <div class="col-xl-8">
-                      <div class="row align-items-end gy-2 gx-0">
-                        <div class="col-xl-5">
+                    <div class="col-xl-8 pl-xl-0 cc-col c-pad">
+                      <div class="row align-items-end">
+                        <div class="col-xl-5 p-xl-0 cc-col">
                           <label class="form-label text-black d-xl-block d-none">TRAVEL DATES</label>
                           <div class="position-relative">
-                            <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4"
+                            <input type="text" class="mb-2 mb-xl-0 form-control py-md-3 py-2 rounded-0 pl-4"
                               placeholder="Destination">
                             <i class="fas fa-calendar-alt position-absolute centered-icon pl-2"></i>
                           </div>
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 p-xl-0 cc-col">
                           <label class="form-label text-black d-xl-block d-none">TRAVELERS</label>
                           <div class="position-relative">
-                            <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4"
+                            <input type="text" class="mb-2 mb-xl-0 form-control py-md-3 py-2 rounded-0 pl-4"
                               placeholder="Destination">
                             <i class="fas fa-male position-absolute centered-icon pl-2"></i>
                           </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 pl-xl-0 cc-col">
                           <button class="btn filter-submit-btn rounded-0 py-md-3 w-100 py-2">TRAVEL DATES</button>
                         </div>
                       </div>
@@ -279,33 +291,34 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                  <div class="row gy-2 gx-0">
-                    <div class="col-xl-4">
+                  <div class="row g-0">
+                    <div class="col-xl-4 cc-col">
                       <label class="form-label text-black d-xl-block d-none">WHERE ARE YOU TRAVELING</label>
                       <div class="position-relative">
-                        <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4" placeholder="Destination">
+                        <input type="text" class="mb-2 mb-xl-0 form-control w-100 py-md-3 py-2 rounded-0 pl-4"
+                          placeholder="Destination">
                         <i class="fas fa-map-marker-alt position-absolute centered-icon pl-2"></i>
                       </div>
                     </div>
-                    <div class="col-xl-8">
-                      <div class="row align-items-end gy-2 gx-0">
-                        <div class="col-xl-5">
+                    <div class="col-xl-8 pl-xl-0 cc-col c-pad">
+                      <div class="row align-items-end">
+                        <div class="col-xl-5 p-xl-0 cc-col">
                           <label class="form-label text-black d-xl-block d-none">TRAVEL DATES</label>
                           <div class="position-relative">
-                            <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4"
+                            <input type="text" class="mb-2 mb-xl-0 form-control py-md-3 py-2 rounded-0 pl-4"
                               placeholder="Destination">
                             <i class="fas fa-calendar-alt position-absolute centered-icon pl-2"></i>
                           </div>
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 p-xl-0 cc-col">
                           <label class="form-label text-black d-xl-block d-none">TRAVELERS</label>
                           <div class="position-relative">
-                            <input type="text" class="form-control py-md-3 py-2 rounded-0 pl-4"
+                            <input type="text" class="mb-2 mb-xl-0 form-control py-md-3 py-2 rounded-0 pl-4"
                               placeholder="Destination">
                             <i class="fas fa-male position-absolute centered-icon pl-2"></i>
                           </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 pl-xl-0 cc-col">
                           <button class="btn filter-submit-btn rounded-0 py-md-3 w-100 py-2">TRAVEL DATES</button>
                         </div>
                       </div>
@@ -330,42 +343,42 @@
         <div class="col-xxl-8 text-content">
           <h5 class="d-md-none title-mobile">WHAT Our Guests Are
             Saying Clients Experience</h5>
-          <h2 class="sub-title d-md-block d-none">WHAT Our Guest Are Saying</h3>
-            <h2 class="title d-md-block d-none">Clients Experience</h2>
-            <p class="title-description col-md-8 mt-3 mb-md-5 mb-4 pb-3">Lorem ipsum dolor <span
-                class="d-md-inline d-none"> sit amet, consectetur iscing elit. Etiam fermentum.Lorem ipsum dolor sit
-                amet, consectetur iscing elit. Etiam fermentum.Lorem ipsum dolor sit amet, consectetur iscing elit.
-                Etiam fermentum.Lorem ipsum dolor sit amet, consectetur iscing elit. Etiam fermentum.</span></p>
+          <h2 class="sub-title d-md-block d-none">WHAT Our Guest Are Saying</h2>
+          <h2 class="title d-md-block d-none">Clients Experience</h2>
+          <p class="title-description col-md-8 mt-3 mb-md-5 mb-4 pb-3">Lorem ipsum dolor <span
+              class="d-md-inline d-none"> sit amet, consectetur iscing elit. Etiam fermentum.Lorem ipsum dolor sit
+              amet, consectetur iscing elit. Etiam fermentum.Lorem ipsum dolor sit amet, consectetur iscing elit.
+              Etiam fermentum.Lorem ipsum dolor sit amet, consectetur iscing elit. Etiam fermentum.</span></p>
 
-            <div class="row g-4">
-              <div class="col-lg-4 items">
-                <div class="d-flex align-items-center mb-md-3 mb-1">
-                  <div class="flex-shrink-0 me-2">
-                    <img src="assets/images/icon/best-tour.svg" alt="icon" class="img-fluid">
-                  </div>
-                  <h5 class="flex-grow-1"> BEST EUROPE TOUR</h5>
+          <div class="row g-4">
+            <div class="col-lg-4 items">
+              <div class="d-flex align-items-center mb-md-3 mb-1">
+                <div class="flex-shrink-0 mr-2">
+                  <img src="assets/images/icon/best-tour.svg" alt="icon" class="img-fluid">
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur iscing elit. Etiam fermentum.</p>
+                <h5 class="flex-grow-1"> BEST EUROPE TOUR</h5>
               </div>
-              <div class="col-lg-4 items">
-                <div class="d-flex align-items-center mb-md-3 mb-1">
-                  <div class="flex-shrink-0 me-2">
-                    <img src="assets/images/icon/airport-pickup.svg" alt="icon" class="img-fluid">
-                  </div>
-                  <h5 class="flex-grow-1"> AIRPORT PICKUP</h5>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur iscing elit. Etiam fermentum.</p>
-              </div>
-              <div class="col-lg-4 items">
-                <div class="d-flex align-items-center mb-md-3 mb-1">
-                  <div class="flex-shrink-0 me-2">
-                    <img src="assets/images/icon/coach-tour.svg" alt="icon" class="img-fluid">
-                  </div>
-                  <h5 class="flex-grow-1"> BEST COACH TOUR</h5>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur iscing elit. Etiam fermentum.</p>
-              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur iscing elit. Etiam fermentum.</p>
             </div>
+            <div class="col-lg-4 items">
+              <div class="d-flex align-items-center mb-md-3 mb-1">
+                <div class="flex-shrink-0 mr-2">
+                  <img src="assets/images/icon/airport-pickup.svg" alt="icon" class="img-fluid">
+                </div>
+                <h5 class="flex-grow-1"> AIRPORT PICKUP</h5>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur iscing elit. Etiam fermentum.</p>
+            </div>
+            <div class="col-lg-4 items">
+              <div class="d-flex align-items-center mb-md-3 mb-1">
+                <div class="flex-shrink-0 mr-2">
+                  <img src="assets/images/icon/coach-tour.svg" alt="icon" class="img-fluid">
+                </div>
+                <h5 class="flex-grow-1"> BEST COACH TOUR</h5>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur iscing elit. Etiam fermentum.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -377,7 +390,7 @@
       <div class="container">
         <h2 class="title text-center mb-5">Top Travel Destinations</h2>
         <div class="row g-5 px-md-0 px-4">
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/new-york.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -388,7 +401,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/san-francisco.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -399,7 +412,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/czech-republic-prague.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -410,7 +423,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/las-vegas.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -421,7 +434,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/los-angeles.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -432,7 +445,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/chicago.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -443,7 +456,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/paris.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -454,7 +467,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/london.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -465,7 +478,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 custom-col">
             <div class="card rounded-4 overflow-hidden border-0 text-white travel-card">
               <img src="assets/images/travel-card/barcelona.png" class="card-img" alt="card-img">
               <div class="card-img-overlay p-md-4 text-center" style="top: unset">
@@ -526,9 +539,10 @@
           <div class="col-10 mx-auto position-relative subscribe-content">
             <img src="assets/images/icon/send.svg" alt="icon"
               class="img-fluid position-absolute top-0 start-100 translate-middle">
-            <h2 class="title text-center">Subsribe To Get Our Latest Updates And Offers</h2>
+            <h2 class="title text-center">
+              Subsribe To Get Our Latest Updates And Offers</h2>
             <form class="d-flex col-lg-8 mx-auto">
-              <div class="position-relative w-100 me-md-3 me-2">
+              <div class="position-relative w-100 me-md-3 mr-2">
                 <img src="assets/images/icon/envelope.svg" class="img-fluid position-absolute top-50 translate-middle-y"
                   alt="icon" style="left: 15px">
                 <input type="text" class="form-control border-0" placeholder="Your email" required>
@@ -577,7 +591,7 @@
         <div class="col-lg-4">
           <h5 class="mobile-app-download-heading">Discover our app</h5>
           <div class="flex align-items-center">
-            <a href="#" class="me-2">
+            <a href="#" class="mr-2">
               <img src="assets/images/Google-Play-sm.png" alt="google-play-store" class="img-fluid">
             </a>
             <a href="#">

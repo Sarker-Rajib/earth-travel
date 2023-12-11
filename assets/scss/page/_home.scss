@@ -12,8 +12,15 @@
 
         .filter-content {
           background-color: #fff;
+          border-radius: 10px;
         }
       }
+
+      .rounded-3 {
+        border-radius: var(--bs-border-radius-lg) !important;
+      }
+
+
     }
 
     .nav-pills {
@@ -55,6 +62,15 @@
         transform: translateY(-50%) !important;
         top: 50% !important;
         left: 0 !important;
+      }
+
+      .form-control {
+        display: block;
+        height: 58px;
+
+        @media(max-width: 1199px) {
+          height: 45px;
+        }
       }
 
       .form-label {
@@ -102,6 +118,8 @@
       }
 
       .items {
+        padding: 1.5rem;
+
         @media (max-width: 767px) {
           padding-left: 30px;
         }
@@ -152,6 +170,7 @@
 
     .travel-card {
       position: relative;
+      border-radius: 15px;
 
       &::before {
         content: '';
@@ -222,6 +241,10 @@
     }
 
     .app-img {
+      transform: translateY(-50%) !important;
+      top: 50% !important;
+      right: 0 !important;
+
       @media (max-width: 1599px) {
         width: 50%;
       }
@@ -310,7 +333,7 @@
       }
 
       .form-control {
-        padding: 20px 20px 20px 40px;
+        padding: 30px 20px 30px 40px;
 
         @media (max-width: 767px) {
           padding: 5px 5px 5px 40px;

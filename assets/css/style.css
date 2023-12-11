@@ -65,6 +65,73 @@ body {
   color: #424242;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.custom-col {
+  padding: 1.5rem;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.start-100 {
+  left: 100%;
+}
+
+.top-100 {
+  top: 100%;
+}
+
+.translate-middle {
+  transform: translate(-50%, -50%) !important;
+}
+
+.top-50 {
+  top: 50%;
+}
+
+.translate-middle-y {
+  transform: translateY(-50%);
+}
+
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
 /*===// end of base css === */
 /*=== components css start === */
 /*===// end of components css === */
@@ -120,6 +187,10 @@ body {
 }
 .home-page .filter .filter-wrapper .blur .filter-content {
   background-color: #fff;
+  border-radius: 10px;
+}
+.home-page .filter .filter-wrapper .rounded-3 {
+  border-radius: var(--bs-border-radius-lg) !important;
 }
 .home-page .filter .nav-pills .nav-link {
   font-family: muli-bold;
@@ -158,6 +229,15 @@ body {
   top: 50% !important;
   left: 0 !important;
 }
+.home-page .filter .tab-content .form-control {
+  display: block;
+  height: 58px;
+}
+@media (max-width: 1199px) {
+  .home-page .filter .tab-content .form-control {
+    height: 45px;
+  }
+}
 .home-page .filter .tab-content .form-label {
   font-family: muli-bold;
   font-size: 14px;
@@ -190,6 +270,9 @@ body {
 }
 .home-page .clients-experience .text-content .title-mobile {
   font-family: muli-bold;
+}
+.home-page .clients-experience .text-content .items {
+  padding: 1.5rem;
 }
 @media (max-width: 767px) {
   .home-page .clients-experience .text-content .items {
@@ -234,6 +317,7 @@ body {
 }
 .home-page .top-travel-destinations .travel-card {
   position: relative;
+  border-radius: 15px;
 }
 .home-page .top-travel-destinations .travel-card::before {
   content: "";
@@ -294,6 +378,11 @@ body {
   .home-page .get-the-mobile-app {
     padding: 20px 0;
   }
+}
+.home-page .get-the-mobile-app .app-img {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  right: 0 !important;
 }
 @media (max-width: 1599px) {
   .home-page .get-the-mobile-app .app-img {
@@ -369,7 +458,7 @@ body {
   }
 }
 .home-page .subscribe .subscribe-content .form-control {
-  padding: 20px 20px 20px 40px;
+  padding: 30px 20px 30px 40px;
 }
 @media (max-width: 767px) {
   .home-page .subscribe .subscribe-content .form-control {
