@@ -317,7 +317,12 @@ body {
 }
 .home-page .top-travel-destinations .travel-card {
   position: relative;
-  border-radius: 15px;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .home-page .top-travel-destinations .travel-card:hover {
+    box-shadow: 5px 5px 15px 0px #61C38A;
+  }
 }
 .home-page .top-travel-destinations .travel-card::before {
   content: "";
