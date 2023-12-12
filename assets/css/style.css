@@ -321,7 +321,7 @@ body {
 }
 @media (max-width: 767px) {
   .home-page .top-travel-destinations .travel-card:hover {
-    box-shadow: 5px 5px 15px 0px #61C38A;
+    box-shadow: 0px 0px 20px 3px #61C38A;
   }
 }
 .home-page .top-travel-destinations .travel-card::before {
